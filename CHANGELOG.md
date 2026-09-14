@@ -1,5 +1,19 @@
 # Changelog
 
+## 57.0.0 - 2026-09-14
+
+**Derivatives Trading Portfolio Margin**
+
+### Removed (7)
+
+- `DELETE /papi/v1/um/conditional/allOpenOrders`
+- `DELETE /papi/v1/um/conditional/order`
+- `POST /papi/v1/um/conditional/order`
+- `GET /papi/v1/um/conditional/openOrders`
+- `GET /papi/v1/um/conditional/allOrders`
+- `GET /papi/v1/um/conditional/openOrder`
+- `GET /papi/v1/um/conditional/orderHistory`
+
 ## 56.2.0 - 2026-08-31
 
 ### Added (1)

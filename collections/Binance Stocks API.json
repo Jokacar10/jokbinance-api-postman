@@ -887,7 +887,7 @@
                                 {
                                     "key": "symbol",
                                     "value": "AAPL",
-                                    "description": "US stock ticker, e.g. `AAPL`, `TSLA`. Must be a symbol with tokenization enabled — check via `/market/tokenized-assets`.",
+                                    "description": "US stock ticker, e.g. `AAPL`, `TSLA`. Must be a tradable US-equity symbol — verify via `/sapi/v1/equity/market/exchangeInfo`. Tokenization enablement (verifiable via `/sapi/v1/equity/market/tokenized-assets`) is *not* required; non-tokenized symbols are accepted and settle as traditional underlying-equity trades. The `tokenize` parameter only takes effect on tokenization-enabled symbols and is silently ignored otherwise.",
                                     "disabled": false
                                 },
                                 {
@@ -953,7 +953,7 @@
                                 {
                                     "key": "tokenize",
                                     "value": "true",
-                                    "description": "Whether to tokenize the purchased stock asset upon settlement. Default `true`. Set to `false` to receive the underlying equity directly instead of a tokenized asset.",
+                                    "description": "Whether to tokenize the purchased stock asset upon settlement. Default `true`. Only takes effect when the symbol is tokenization-enabled (check via `/market/tokenized-assets`); silently ignored for non-tokenized symbols, which always settle as traditional underlying-equity trades.",
                                     "disabled": true
                                 },
                                 {
