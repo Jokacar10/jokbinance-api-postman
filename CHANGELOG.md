@@ -1,5 +1,15 @@
 # Changelog
 
+## 57.0.1 - 2026-09-16
+
+**Derivatives Trading USDS Futures**
+
+### Changed (1)
+
+- Added parameter `reduceOnly`
+  - affected endpoints:
+    - `PUT /fapi/v1/order`
+
 ## 57.0.0 - 2026-09-14
 
 **Derivatives Trading Portfolio Margin**
